@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background: rgb(29, 70, 117);
+    background: linear-gradient(135deg, rgba(29, 70, 117, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(29, 70, 117, 1) 100%);
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(29, 70, 117);
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+}
