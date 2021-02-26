@@ -29,8 +29,14 @@
                     <img src="/assets/img/Logo.png" class="logo mt-3 mb-3">
                     <h3><b>PPDB PAUD CENDEKIA KAMAYEL</b></h3>
                 </center>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Perhatian !</strong> Form Pendafataran Wajib di isi semua.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 <div class="container">
-                    <form action="/pendaftaran/daftar" method="POST" class="mt-5">
+                    <form action="/pendaftaran/daftar" method="POST" class="mt-3">
                         <?= csrf_field(); ?>
                         <label><b>Nama Lengkap</b></label>
                         <input type="text" name="nama" placeholder="Masukan Nama Lengkap" class="form-control" autocomplete="off" required>

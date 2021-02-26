@@ -27,6 +27,13 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
+	/**
+	 * Instance of the main Request object.
+	 *
+	 * @var HTTP\IncomingRequest
+	 */
+	protected $request;
+	// protected $request;
 	protected $helpers = [];
 
 	/**
@@ -40,7 +47,7 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-		
+
 		session();
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.

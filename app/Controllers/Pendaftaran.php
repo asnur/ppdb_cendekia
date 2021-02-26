@@ -8,6 +8,7 @@ class Pendaftaran extends BaseController
 {
     protected $pendaftaran;
 
+
     public function __construct()
     {
         $this->pendaftaran = new Ppdb();
@@ -30,7 +31,8 @@ class Pendaftaran extends BaseController
             'alamat' => htmlspecialchars($this->request->getVar('alamat')),
             'tinggal' => htmlspecialchars($this->request->getVar('tinggal')),
             'anak_ke' => htmlspecialchars($this->request->getVar('anak_ke')),
-            'usia' => htmlspecialchars($this->request->getVar('usia'))
+            'usia' => htmlspecialchars($this->request->getVar('usia')),
+            'tanggal_daftar' => date('Y-m-d')
         ]);
         session()->setFlashdata('pesan', 'Pendaftaran Berhasil');
         return redirect()->to('/');
